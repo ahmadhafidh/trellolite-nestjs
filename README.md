@@ -96,3 +96,44 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+
+npx prisma migrate dev --name init  //run migration
+
+rm -rf prisma/migrations
+npx prisma migrate dev --name init
+
+src/
+├── app.module.ts
+├── main.ts
+│
+├── prisma/
+│   ├── prisma.module.ts
+│   ├── prisma.service.ts
+│
+├── auth/
+│   ├── auth.module.ts
+│   ├── auth.controller.ts
+│   ├── auth.service.ts
+│   ├── dto/
+│   ├── guards/
+│
+├── users/
+│   ├── users.module.ts
+│   ├── users.service.ts
+│
+├── projects/
+│   ├── projects.module.ts
+│   ├── projects.controller.ts
+│   ├── projects.service.ts
+│
+├── tasks/
+│   ├── tasks.module.ts
+│   ├── tasks.controller.ts
+│   ├── tasks.service.ts
+│
+└── common/
+    ├── decorators/
+    ├── filters/
+    ├── pipes/
+    └── responses/

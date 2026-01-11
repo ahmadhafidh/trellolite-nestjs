@@ -121,3 +121,20 @@ src/
 └── common/
     ├── decorators/
     └── helpers/
+```
+
+## Additional - Deploy VPS (Production Only)
+
+```bash
+# install Dependencies (Production Only)
+$ npm ci --omit=dev
+
+# build nestjs
+$ npm run build
+
+# install PM2
+$ npm install -g pm2
+
+# Setup PM2 on VPS
+$ pm2 start dist/main.js --name trellolite-api && pm2 save
+```

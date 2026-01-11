@@ -89,13 +89,14 @@ https://documenter.getpostman.com/view/26950655/2sBXVfiWwY
 
 ## Project Structure
 
+```text
 src/
 ├── app.module.ts
 ├── main.ts
 │
 ├── prisma/
 │   ├── prisma.module.ts
-│   ├── prisma.service.ts
+│   └── prisma.service.ts
 │
 ├── auth/
 │   ├── dto/
@@ -103,20 +104,20 @@ src/
 │   ├── strategies/
 │   ├── auth.controller.ts
 │   ├── auth.module.ts
-│   ├── auth.service.ts
+│   └── auth.service.ts
 │
 ├── projects/
 │   ├── dto/
 │   ├── projects.controller.ts
 │   ├── projects.module.ts
-│   ├── projects.service.ts
+│   └── projects.service.ts
 │
 ├── tasks/
 │   ├── dto/
 │   ├── tasks.controller.ts
 │   ├── tasks.module.ts
-│   ├── tasks.service.ts
+│   └── tasks.service.ts
 │
 └── common/
     ├── decorators/
-    ├── helpers/
+    └── helpers/

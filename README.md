@@ -62,20 +62,23 @@ src/
 │   ├── prisma.service.ts
 │
 ├── auth/
-│   ├── auth.module.ts
-│   ├── auth.controller.ts
-│   ├── auth.service.ts
 │   ├── dto/
 │   ├── guards/
+│   ├── strategies/
+│   ├── auth.controller.ts
+│   ├── auth.module.ts
+│   ├── auth.service.ts
 │
 ├── projects/
-│   ├── projects.module.ts
+│   ├── dto/
 │   ├── projects.controller.ts
+│   ├── projects.module.ts
 │   ├── projects.service.ts
 │
 ├── tasks/
-│   ├── tasks.module.ts
+│   ├── dto/
 │   ├── tasks.controller.ts
+│   ├── tasks.module.ts
 │   ├── tasks.service.ts
 │
 └── common/
